@@ -21,7 +21,7 @@ The following properties are displayed on the user list page:
 3. name 
 4. link to website.
 
-   When the user clicks on the fetched entry (the card or the table row), the user gets navigated to the entry page. 
+When the user clicks on the fetched entry (the card or the table row), the user gets navigated to the entry page. 
 
 ### Entry Details Page:
 
