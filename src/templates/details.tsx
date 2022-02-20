@@ -6,7 +6,10 @@
 import { useRouteMatch } from 'react-router-dom';
 import User from '../shared/interfaces/user'
 import { useEffect } from 'react';
-import { FetchUserById } from './../data'
+import { FetchUserById } from './../data';
+
+// load component-specific styles
+import './../scss/pages/details.scss';
 
 const Details = () => {
 
@@ -23,14 +26,14 @@ const Details = () => {
     return (
         user ?
             <article id={`user-${user.id}`}>
-                <h2>{user.name}</h2>
+                <h2>{user.username}</h2>
                 <div className="additional-info">
-                    {user.username}
-                    {user.email}
-                    {user.address.city}
-                    {user.phone}
-                    {user.website}
-                    {user.company.name}
+                    <p>Full Name: {user.name}</p>
+                    <p>Email: {user.email}</p>
+                    <p>Address: {user.address.city}</p>
+                    <p>Phone: {user.phone}</p>
+                    <p>Website: <a href={`//${user.website}`} target="_blank">{user.website}</a></p>
+                    <p>Company: {user.company.name}</p>
                 </div>
             </article> :
             <p className="text-center">Loading...</p>

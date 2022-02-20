@@ -1,40 +1,23 @@
 .wrapper {
-    max-width: 1160px;
+    max-width: 1280px;
     margin: auto;
-  }
-  
-  p {
+}
+
+p {
     font-size: 20px;
     line-height: 1.5rem;
-  }
-  
-  img {
+}
+
+img {
     max-width: 100%;
-  }
-  article {
-    margin-bottom: 2.5rem;
-    &:after {
-      @include clearfix;
-    }
-  }
-  .site-title {
+}
+
+.site-title {
     text-align: center;
-  }
-  .link-more {
-    display: none;
-  }
-  .text-center {
-    text-align: center;
-  }
-  .m-auto {
-    display: table;
-    margin: auto;
-  }
-  
-  @media(min-width: 80rem){
-    .post-thumbnail {
-      float: left;
-      width: 40%;
-      padding-right: 2rem
+    a {
+      text-decoration: none;
     }
-  }
+}
+.text-center {
+    text-align: center;
+}

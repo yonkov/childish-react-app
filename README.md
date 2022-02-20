@@ -1,37 +1,37 @@
-# Headless WordPress CMS with Typescript and React
+This is a small frontend React application using the https://jsonplaceholder.typicode.com API. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and [Typescript](https://www.typescriptlang.org/), by running `npx create-react-app my-app --template typescript`. Additionally, it uses the following react libraries:
+1. axios - Promise based HTTP client for the browser and node.js
+2. React Router DOM - Enables dynamic routing in a web app
+3. MUI - Prebuilt UI components implements Google’s Material Design and its grid system
 
-**Live example**: https://typescript-react-pliska.netlify.app/
+The application has 2 pages:
 
-This is an example frontend app written in typescript and react that uses WordPress as a headless cms. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and [Typescript](https://www.typescriptlang.org/), by running `npx create-react-app my-app --template typescript`
+### Entry list page:
 
-It is a single page application that fetches posts from a seperate WordPress [demo website](https://try-pliska.nasiothemes.com/). It takes advantage of the [WordPress rest api endpoints](https://developer.wordpress.org/rest-api/) and uses the [react router](https://v5.reactrouter.com/web/guides/quick-start) library to simulate page navigation. The app uses [typescript's types](https://www.typescriptlang.org/docs/handbook/basic-types.html) and custom interfaces to minimize potential errors and improve the project's predictability.
+Fetches a list of entries provided by this url: https://jsonplaceholder.typicode.com/users.
 
-## SCSS
-The app uses scss to preprocess css as shown in the [documentation](https://create-react-app.dev/docs/adding-a-sass-stylesheet/). It uses mixins and 7X1 architecture for optimal file structure.
+The following properties are displayed on the user list page:
 
-## Available Scripts
+1. username 
+2. email
+3. name 
+4. link to website.
 
-In the project directory, you can run:
+   When the user clicks on the fetched entry (the card or the table row), the user gets navigated to the entry page. 
 
-### `npm start`
+### Entry details page:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The page gets displayed when the user has clicked on the entry he/she wants to visit.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Fetches the details from the endpoint https://jsonplaceholder.typicode.com/users/{id}, where the {id} is the entry id that has been selected.
 
-### `npm test`
+The page displays the following properties:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. name
+2. username
+3. email
+4. address city
+5. phone
+6. website 
+7. company name.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+When the user clicks on the website that has been displayed he/she is navigated to the website in a new tab.
