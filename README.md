@@ -5,7 +5,9 @@ This is a small frontend React application using the https://jsonplaceholder.typ
 
 The application has 2 pages:
 
-### Entry list page:
+### Entry List Page:
+
+![Image One: Entry List Page](https://i.imgur.com/I41nhbG.png)
 
 Fetches a list of entries provided by this url: https://jsonplaceholder.typicode.com/users.
 
@@ -18,7 +20,9 @@ The following properties are displayed on the user list page:
 
    When the user clicks on the fetched entry (the card or the table row), the user gets navigated to the entry page. 
 
-### Entry details page:
+### Entry Details Page:
+
+![Image Two: Entry Details Page](https://i.imgur.com/yF1LbcK.png)
 
 The page gets displayed when the user has clicked on the entry he/she wants to visit.
 
