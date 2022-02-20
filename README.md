@@ -1,7 +1,10 @@
 This is a small frontend React application using the https://jsonplaceholder.typicode.com API. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and [Typescript](https://www.typescriptlang.org/), by running `npx create-react-app my-app --template typescript`. Additionally, it uses the following react libraries:
-1. axios - Promise based HTTP client for the browser and node.js
+1. Axios - Promise based HTTP client for the browser and node.js
 2. React Router DOM - Enables dynamic routing in a web app
-3. MUI - Prebuilt UI components implements Google’s Material Design and its grid system
+3. MUI - Prebuilt UI components used to create the grid system
+np
+### How to run the application
+Clone or download this repository, then run `npm install` and then `npm run start`.
 
 The application has 2 pages:
 
