@@ -8,13 +8,6 @@ import './scss/App.scss'
 
 function App() {
 
-	const [pageNum, setPageNum] = useState<number>(1);
-	const maxNumberOfPosts = 100;
-
-	const loadMoreItems = () => {
-		setPageNum(pageNum + 1);
-	}
-
 	return (
 		<div className="wrapper">
 			<header><Link to="/"><h1 className="site-title">My Awesome Frontend App with React and Typescript</h1></Link>
